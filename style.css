@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url(https://fonts.gstatic.com/s/cuprum/v25/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjvYJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'B612';
+    src: url(https://fonts.gstatic.com/s/b612/v12/3JnySDDxiSz36j6yGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  main {
+      margin: 1em auto;
+  
+      max-width: 800px;
+      font-size: 1.2em;
+      font-family: "Times New Roman", Times, serif;
+  
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+  
+  }
+  
+  html {
+      cursor: url('https://file.garden/ZbZyYF4T-h3XvGvw/bambiCursorLol.cur'), auto;
+  }
+  
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-thumb { background: #aeaeaecc; } /* Handle */
+  
+  hr { margin-bottom: -12px; }
+  
+  h2 { margin-bottom: 8px; }
+  h3 { margin: 3px;}
+  
+  iframe {
+    width: 99.2%;
+    height: 100px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  /* headers */
+  .headbox {
+    background-color: #eeeeee;
+    display: block;
+    margin: 0 2px;
+    padding: 0.35em 0.75em 0.625em;
+    border: 1px solid #adadad;
+  }
+  
+  .head {
+    background-color: #e4e4e4;
+    border: 1px solid #8e8e8e;
+    padding: 0 1.5px;
+    margin: -0.8px 2px;
+    font-size: 16px;
+    color: #323232;
+  }
+  
+  .icon { /* for the little icons in the headers (not songs) */
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+  }
+  /* */
+  
+  /* image tooltips */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
+  .tooltip-img {
+    border: 1px solid #ddd;
+    padding: 3px;
+    margin-left: 150px;
+    width: 300px;
+    background-color: black;
+  }
+  
+  .tooltip .tooltip-img {
+    visibility: hidden;
+  
+    /* Position the tooltip */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -140px;
+  }
+  
+  .tooltip:hover .tooltip-img {
+    visibility: visible;
+  }
+  /* */
+  
+  
+  /* dropdown stuff */
+  summary::marker {
+      content: "× "; /* Custom marker for closed state */
+  }
+  details[open] summary::marker {
+      content: "+ ";
+  }
+  
+  summary {
+    padding: 3px 5px;
+    background-image: linear-gradient(179.7deg,white 60%, #d0d0d0);
+    border: 0.5px solid #898989;
+    box-shadow: 0px 0.11rem 0.11rem #bbbbbb;
+    cursor: pointer;
+  }
+  
+  summary:hover {
+    background-image: none;
+    background-color: aqua;
+    color: #0000ff;
+  }
+  
+  details {
+    width: 100%;
+    box-shadow: 0px 0.11rem 0.11rem #bbbbbb;
+  }
+  
+  details[open] {
+    width: 99.7%;
+    background-color: #eeeeee;
+    border: 0.05rem solid grey;
+    margin-bottom: 5px;
+  }
+  
+  details[open] summary { /* don't change this, it aligns summary with details when opened */
+    box-shadow: none;
+    margin-top: -0.8px; margin-left: -0.5px; margin-right: -0.8px;
+  }
+  
+  p { display: inline-block; }
+  
+  details > p, details > a, details > u {
+    margin: 3px 5px;
+    font-family: monospace;
+    font-size: 13px;
+    background-color: #e3e3e3;
+  }
+  
+  summary > p { margin: 0px; display: inline; }
+  /* */
+  
+  
+  .sw { /* sound warning */
+    color: rgb(134, 0, 0);
+    font-size: 15px;
+  }
+  
+  
+  /* song icons */
+  .ic-1 {
+    margin-bottom: -2px;
+    margin-left: -4px;
+    width: 16px;
+    height: auto;
+  }
+  
+  .ic-2 {
+    margin-bottom: -1.5px;
+    width: 12px;
+    height: auto;
+  }
+  /* */
+  
+  
+  .bb { /* beepbox (vscode knew what this was gonna be wtf 😭*/
+    -webkit-text-stroke: 0.2px;
+    color:#7846ff;
+    font-family:'B612';
+    font-size: 14px;
+    /* text-shadow: -1px 0.5px 0px #000000; */
+  }
+  
+  .gb { /* garageband */
+    color:#ff4b00;
+    font-family: Helvetica;
+    font-size: 14px;
+  }
+  
+  .fls { /* fl studio (THIS TOO) */
+    color:#228B22; 
+    font-family:'Cuprum';
+    font-size: 17px;
+  }
+  
+  
+  /* tag-based filter */
+  .tag-filter {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .tag {
+      padding: 3px 10px;
+      margin: 3px;
+      cursor: pointer;
+  }
+  
+  .filter-buttons {
+      display: inline;
+  }
+  
+  .filter-btn {
+      padding: 0px 8px;
+      border: 2px outset #00000080;
+      cursor: pointer;
+      border-radius: 10px;
+    display: inline;
+    font-size: 13px;
+    margin-bottom: -5px
+  }
+  
+  
+  .tag.active, .filter-btn {
+      color: white; 
+  }
+  
+  .tag.active {
+    border: 1px solid black;
+  }
+  
+  .tag[data-filter="all"].active {
+      background-color: #555555;
+  }
+  
+  .tag[data-filter="sl"].active, .filter-btn[data-filter="sl"], .tag[data-filter="ll"].active, .filter-btn[data-filter="ll"] {
+      background-color: #6600ff;
+  }
+  
+  .tag[data-filter="gb"].active, .filter-btn[data-filter="gb"] {
+      background-color: #ff9500;
+  }
+  
+  .hidden {
+      display: none;
+  }
